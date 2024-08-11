@@ -1,0 +1,45 @@
+@import "@styles/variables.scss";
+
+.typing-test{
+    margin: 20px;
+
+    &__wrapper{
+        position: relative;
+    }
+
+    &__placeholder{
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: $regent-gray;
+        white-space: pre-wrap;
+        pointer-events: none;
+        font-size: 20px;
+        line-height: 1.5;
+        max-height: 4.5em;
+        overflow: hidden;
+        max-width: 98%;
+    }
+
+    &__input{
+        width: 100%;
+        height: 6em;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 1.5;
+        overflow: hidden;
+        resize: none;
+        background: transparent;
+        color: transparent;
+        caret-color: transparent;
+        border: 2px solid $purple-heart;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}

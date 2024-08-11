@@ -1,0 +1,71 @@
+@mixin label-giant{
+    margin: 0;
+
+    font-size: $font-size-giant;
+    line-height: $font-line-height-giant;
+
+    font-weight: $font-weight-regular;
+}
+
+@mixin title-huge{
+    margin: 0;
+
+    font-size: $font-size-huge;
+    line-height: $font-line-height-huge;
+
+    font-weight: $font-weight-bold;
+}
+
+@mixin title-big{
+    margin: 0;
+
+    font-size: $font-size-big;
+    line-height: $font-line-height-big;
+
+    font-weight: $font-weight-bold;
+}
+
+@mixin title-medium{
+    margin: 0;
+
+    font-size: $font-size-medium;
+    line-height: $font-line-height-medium;
+
+    font-weight: $font-weight-bold;
+}
+
+@mixin title-little{
+    margin: 0;
+
+    font-size: $font-size-little;
+    line-height: $font-line-height-little;
+
+    font-weight: $font-weight-bold;
+}
+
+@mixin title-miniature{
+    margin: 0;
+
+    font-size: $font-size-miniature;
+    line-height: $font-line-height-miniature;
+
+    font-weight: $font-weight-bold;
+}
+
+@mixin text-big{
+    margin: 0;
+
+    font-size: $font-size-text-big;
+    line-height: $font-line-height-text-big;
+
+    font-weight: $font-weight-regular;
+}
+
+@mixin text-regular{
+    margin: 0;
+
+    font-size: $font-size-text-regular;
+    line-height: $font-line-height-text-regular;
+
+    font-weight: $font-weight-regular;
+}

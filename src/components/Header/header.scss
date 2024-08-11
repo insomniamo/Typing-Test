@@ -1,0 +1,64 @@
+@import "@styles/variables.scss";
+.header{
+    margin-top: 150px;
+
+    height: $header-height-mobile;
+    background-color: $electric-violet;
+    z-index: 1;
+
+    @media #{$tablet-width}{
+        height: $header-height-not-mobile;
+    }
+
+    &__container{
+        height: inherit;
+        max-width: $max-container-width;
+
+        margin-inline: auto;
+        padding-inline: $gap-container-mobile;
+    
+        @media #{$tablet-width}{
+            padding-inline: $gap-container-tablet;
+        }
+    
+        @media #{$desktop-width}{
+            padding-inline: $gap-container-desktop;
+        }
+    }
+
+    &__column{
+        &--logo{
+            // height: 50px;
+            
+
+            // & > .svg{
+            //     width: 100%;
+            //     height: 100%;
+            // }
+        }
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: inherit;
+    }
+
+
+
+    &__button{
+        background-color: $electric-violet;
+        border: none;
+
+        & > svg{
+            width: 18px;
+            height: 11px;
+        }
+        
+        @media #{$tablet-width}{
+            display: none;
+        }
+    }
+}

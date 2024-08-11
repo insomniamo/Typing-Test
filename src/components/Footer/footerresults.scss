@@ -1,0 +1,54 @@
+@import "@styles/variables.scss";
+
+.footerresults {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+
+        & > span {
+            font-weight: 700;
+            font-size: 15px;
+            color: $purple-heart;
+        }
+
+        @media #{$tablet-width} {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+    
+            & > span {
+                font-weight: 700;
+                font-size: 25px;
+                color: $purple-heart;
+            }
+        }
+    }
+
+    &__icon {
+        height: 25px;
+        width: 25px;
+
+        & > *{
+            height: 90%;
+            width: 90%;
+        }
+    }
+    @media #{$tablet-width} {
+        &__icon {
+            height: 50px;
+            width: 50px;
+    
+            & > *{
+                height: 90%;
+                width: 90%;
+            }
+        }
+    }
+}
